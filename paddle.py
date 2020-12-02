@@ -1,5 +1,5 @@
 from turtle import Turtle
-#STARTING.POSITION = [()]
+
 
 class Paddle(Turtle):
     def __init__(self, position):
