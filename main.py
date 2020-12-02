@@ -12,8 +12,8 @@ screen.title("Pong")
 screen.tracer(0)
 screen.listen()
 
-paddle1 = Paddle((350,0))
-paddle2 = Paddle((-350, 0))
+paddle1 = Paddle((370,0))
+paddle2 = Paddle((-370, 0))
 ball = Ball()
 
 
@@ -27,33 +27,9 @@ screen.onkey(paddle2.go_down, "s")
 while is_on:
     screen.update()
     ball.move()
-    time.sleep(0.05)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    time.sleep(0.1)
+    if ball.ycor() > 270 or ball.ycor() < -270:
+        ball.bounce()
 
 
 
