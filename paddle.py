@@ -8,7 +8,7 @@ class Paddle(Turtle):
         self.paddle.shape("square")
         self.paddle.color("white")
         self.paddle.pu()
-        self.paddle.shapesize(stretch_wid=5, stretch_len= 1)
+        self.paddle.shapesize(stretch_wid=5, stretch_len=1)
         self.paddle.goto(position)
         self.new_y = 0
         self.new_x = 0

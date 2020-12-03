@@ -9,10 +9,9 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.pu()
         self.goto(position)
-        self.write(self.score, font=("Arial", 30 , "normal"))
-
+        self.write(self.score, font=("Arial", 30, "normal"))
 
     def point(self):
         self.clear()
-        self.score +=1
-        self.write(self.score, font=("Arial", 30 , "normal"))
+        self.score += 1
+        self.write(self.score, font=("Arial", 30, "normal"))
