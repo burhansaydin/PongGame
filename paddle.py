@@ -10,6 +10,8 @@ class Paddle(Turtle):
         self.paddle.pu()
         self.paddle.shapesize(stretch_wid=5, stretch_len= 1)
         self.paddle.goto(position)
+        self.new_y = 0
+        self.new_x = 0
 
     def go_up(self):
         self.new_y = self.paddle.ycor() + 40
